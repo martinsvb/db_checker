@@ -68,8 +68,8 @@
             echo "Aktuální čas operace: ".round($time, 5)." s<br />";
             
             function faktorial($n) {
-                if ($n>0) $n*faktorial($n-1);
-                return;
+                if ($n==0) return 1;
+                else return $n*faktorial($n-1);
             }
             
             echo faktorial(5);
