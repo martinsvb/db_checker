@@ -1,0 +1,135 @@
+html, body
+{
+	text-align: center;
+	background-color: white;
+	width: 100%;
+	margin: 0; padding: 0;
+	font: 12.5pt/1.5 Calibri, Arial, Times New Roman, Tahoma;
+	color: #000000;
+}
+
+.cleaner
+{
+	clear: both;
+	height: 1px;
+	font-size: 1px;
+	border: none;
+	margin: 0; padding: 0;
+	background: transparent;
+}
+
+/* Struktura */
+#wrapper { width: 100%; min-width: 1024px; text-align: left; padding: 0; }
+
+header { width: 100%; background: #CEEEFF; text-align: left;
+	position: fixed; top: 0; left: 0; }
+
+header #navLeft, #navLeft .box1, #navLeft .box2 { float: left; display: inline; }
+header #navLeft { width: 65%; padding: 0 0 0 15px; }
+#navLeft .box1 { width: 20%; }
+#navLeft .box2 { width: 75%; }
+
+#fullContent { width: 100%; margin-top: 70px; }
+
+#left { width: 21%; float: left; }
+#right { width: 75%; float: right; }
+#left, #right { padding: 0 1%; margin-top: 70px; }
+
+.leftHalf { width: 48%; float: left; }
+.rightHalf { width: 48%; float: right; }
+.leftHalf, .rightHalf { padding: 0 1%; margin: 0 0 5px 0; }
+
+a { text-decoration: none; color: #68C0FF; }
+a:hover { text-decoration: underline; }
+
+/* Nadpisy */
+h1, h2, h3
+{
+	margin: 0; padding: 0;
+	text-decoration: none; text-align: left;
+	font-weight: 500;
+	line-height: normal;
+	color: #B5B5B5;
+}
+
+h1 { font-size: 170%; font-weight: bold; text-align: left; color: #E5B442; padding: 12px 0; }
+h2 { width: 98%; font-size: 115%; margin: 10px 1% 5px 1%; background: #F2EFEF; }
+h3 { font-size: 105%; margin: 5px 1% 5px 1%; }
+
+table, p, ul, div { padding: 0; margin: 0 auto; }
+
+/* Elemty */
+span { font-size: 100%; }
+input, textarea, select { font-family: Calibri, Arial, Times New Roman, Tahoma; }
+input[type=submit] { border: 0; }
+input[type=text], select { border: 0; background: transparent; }
+input[type=text]:focus, textarea:focus  { border: 1px solid #5082BF; }
+option { background: white; }
+
+td { overflow: auto; }
+
+/* Tabulky */
+.vnitrni { width: 100%; table-layout: auto; border-collapse: collapse; color: #8C8C8C; }
+.vnitrni thead, .vnitrni tbody { border: 1px solid #BABABA; }
+.vnitrni thead th { background: #BABABA; color: white; text-align: left; font-weight: normal; }
+.vnitrni th { color: #F2B99D; text-align: right; font-weight: normal; }
+.vnitrni th, .vnitrni td { font-size: 80%; padding: 2px 4px; border: 0; }
+.vnitrni tbody tr:nth-child(odd) { background: #F9F6E3; }
+.vnitrni td textarea { font-size: 90%; padding: 2px 4px; border: 1px solid #A9CDF2; overflow: auto; }
+.vnitrni tbody tr:hover { color: #5D73E2; background: #FFEDCC; }
+
+header .vnitrni thead, header .vnitrni tbody { border: 0; }
+header .vnitrni thead th { background: transparent; color: #BCBCBC; text-align: left; }
+header .vnitrni th, header .vnitrni td { font-size: 90%; font-weight: 300; padding: 2px 8px; }
+
+/* Nav */
+nav { float: right; width: 30%; padding: 0 15px 0 0; }
+nav ul { float: left; text-align: left; margin: 15px 0; }
+nav li { display: inline; margin-left: 15px; }
+nav li a { color: #BCBCBC; font-weight: bold; font-size: 120%; }
+
+span.info { float: right; display: inline; margin-top: 15px; cursor: help; }
+
+span.info span.tip { display: none; }
+
+/* tooltip will display on :hover event */
+span.info:hover span.tip {
+	display: block; z-index: 100;
+	position: fixed; top: 50px; right: 0;
+	width: 30%; padding: 5px 10px;
+	border: 3px solid #A0A0A0; background: #FCFFCC;
+	text-align: left; font-size: 105%; color: #5D73E2;
+	border-radius: 15px 5px 15px 5px;
+}
+
+.icon-plus:before { content: '\2b'; } /* '+' */
+.icon-minus:before { content: '\2d'; } /* '-' */
+.icon-plus, .icon-minus { font-weight: bold; color: #BABABA; font-size: 105%; }
+
+/* Tridy */
+.bila { background-color: white; }
+.barva { background-color: #EAEAEA; }
+.zvyrazni { color: white; background-color: #5E5E5E; }
+.zvyrazni2 { color: #FF7F7F; }
+
+.vlevo { text-align: left; }
+.vpravo { text-align: right; }
+.stred { text-align: center; }
+
+.plujVlevo { float: left; width: 65%; padding: 0 0 0 15px; text-align: left; border: 1px solid blue; }
+.plujVpravo { float: right; }
+
+.odkaz { color: #8C8C8C; margin-top: 4px; margin-bottom: 4px; margin-right: 2px; padding: 2px 8px; cursor: pointer; }
+.modra { background: #E5F5FF; }
+.modra:hover { background: #D1EEFF; }
+.cervena { background: #FFE0E0; }
+.cervena:hover { background: #FFD6D6; }
+.zluta { background: #F7F7C0; }
+.zluta:hover { background: #F7F6B2; }
+
+.ruka { cursor: pointer; }
+.skryj { display: none; }
+
+.hover { background: yellow; }
+
+.sirkaM { width: 100px; }
