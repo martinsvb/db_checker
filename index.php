@@ -65,14 +65,7 @@
             $log->readData();
             */
             
-            echo "Aktuální čas operace: ".round($time, 5)." s<br />";
-            
-            function faktorial($n) {
-                if ($n>0) $n*faktorial($n-1);
-                return;
-            }
-            
-            echo faktorial(5);
+            echo "Aktuální čas operace: ".round($time, 5)." s";
             
             /*
             Průměr iterátoru: ".round(array_sum($log->data[0]) / count($log->data[0]), 5)." s<br />
